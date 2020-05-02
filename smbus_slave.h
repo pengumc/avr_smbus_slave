@@ -18,7 +18,6 @@ typedef struct SMBusSlave
 	uint8_t* write_mem;
 } smbus_slave_t;
 
-extern smbus_slave_t* global_smbus_slave;
 void smbus_slave_init(uint8_t i2c_addr, uint8_t twbr, uint8_t prescaler,
 					  uint8_t* read_mem, uint8_t* write_mem);
 
